@@ -9,7 +9,7 @@
 
 <style type="text/css">
  html{
- background-color:rgb(255,215,0);
+ background-color:rgb(0,0,0);
  }
  
  body{
@@ -19,6 +19,45 @@
  h1{
   font-color:#fffff;
   font-size:16px;
+}
+	 h2{
+  font-color:#fffff;
+  font-size:16px;
+}
+			  .neon
+{
+  position:absolute;
+  top:10%;
+  left:25%;
+	z-index:78;
+	translate:transform (-50%,-50%);
+	margin:0;
+	padding:0 20px;
+	font-size:50px;
+	color:#34ccff;
+	text-shadow:0 0 20px;
+}
+.neon:after
+{
+	top:0;
+	left:0;
+	content:attr(data-text);
+	position:absolute;
+	padding:0 0 20px;
+	z-index:75;
+	color:#34ccff;
+	filter:blur(15px);
+}
+.neon:before
+{
+	content:" ";
+	top:0;
+	left:0;
+	position:absolute;
+	background:#34ccff;
+	z-index:73;
+	opacity:.5;
+	filter:blur(40px);
 }
  .lotto{
  width:95%;
@@ -97,8 +136,14 @@
  #2 will recieve 100 dollars.</h1>
 </head>
 <body>
- <div class="withlove"></div>
-  <center>
+
+	
+	<div class="withlove">
+	<div class="neon" data-text"Win Big"></div>
+	</div>
+  
+	
+	<center>
 <div id="left-sidebar">
 	 <div class="withloves1"></div>
 	<div class="withloves2"></div>
