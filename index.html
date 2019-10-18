@@ -111,12 +111,39 @@
  }
 		  
 		  .witlove{
-		  width:2000px; 
+			  background-color:rgb(255,55,55);
+		  width:500px; 
 	height:180px;
-	overflow:hidden;
-			
- }
+	animation:lottoryinstructions 5s 3 infinate;
+	-webkit-animation:lottoryinstructions 5s 3 infinate;
+	}
 	
+	@keyframes{lottoryinstructions
+		0%{left:30%; top:150%;}
+		50%{left:30%; top:50%;}
+		100%{left:30%; top:-150%;}
+ }
+	@-webkit-keyframes{lottoryinstructions
+		0%{left:30%; top:150%;}
+		50%{left:30%; top:150%;}
+		100%{left:30%; top:-150%;}
+	}
+	
+	
+		  #left-sidebar{
+  float:left;
+  width:370px;
+	background-color:#white;
+			 height:530px;
+	
+}
+#right-sidebar{
+  float:right;
+  width:370px;
+	margin-right:5%;
+	 height:530px;
+	background-color:#white;
+}
 <style>
 </header>
 <head>
@@ -129,58 +156,12 @@
 <body>
  
   <center>
-
-	  <div class="withlove">
-		  <div class="witlove">
-	 <div class="withloves">
-		   </div>
-	  <div class="withloves1">
-		   </div>
-	  <div class="withloves2">
-		   </div>
-	  <div class="withloves3">
-		   </div>
-	  <div class="withloves4">
-		   </div>
-			
-</div>
-	</div>
+<div id="left-sidebar"></div>
 	  </center>
-<center>
-
-	  <div class="withlove">
-		  <div class="witlove">
-	 <div class="withloves">
-		   </div>
-	  <div class="withloves1">
-		   </div>
-	  <div class="withloves2">
-		   </div>
-	  <div class="withloves3">
-		   </div>
-	  <div class="withloves4">
-		   </div>
-			
-</div>
-	</div>
-	  </center>
- <center>
-
-	  <div class="withlove">
-		  <div class="witlove">
-	 <div class="withloves">
-		   </div>
-	  <div class="withloves1">
-		   </div>
-	  <div class="withloves2">
-		   </div>
-	  <div class="withloves3">
-		   </div>
-	  <div class="withloves4">
-		   </div>
-			
-</div>
-	</div>
+	
+	
+	<center>
+<div id="right-sidebar"></div>
 	  </center>
 <script>
 </script>
