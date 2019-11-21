@@ -87,8 +87,28 @@
 	 z-index:78;
  }
  
- 	
+	.blackcard{
+	position:relative;
+    width:250px;
+  height:150px;
+  border-radius:40px;
+  border-type:inset;
+	 background-image:url("");
+		background-size:250px 150px;
+		background-repeat:no-repeat;
+		animation:cardflip 1s linear 1 infinite;
+		-webkit-animation:cardflip 1s linear 1 infinite;
 
+	}
+	@keyframes cardflip{
+		to{transform:rotateX(0deg);}
+		from{transform:rotateX(360deg);}
+	}
+	@-webkit-keyframes cardflip{
+	to{transform:rotateX(0deg);}
+		from{transform:rotateX(360deg);}
+	}
+	
 	.lit{
 		top:150px;
 		position:absolute;
@@ -204,7 +224,7 @@ background-color:rgb(222,137,240);
 <body>
 	<center><div class="gaming">	</div>	 </center>
 	<div class="lamborghini">
-
+<div class="blackcard"></div>
 <p>
 number|exp|cvv|name|country|state|zip|city|street|email|phone|dob|bank|type1|type2|type3|full|vbv
 <br>
